@@ -1,0 +1,551 @@
+<html>
+    <header>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .card_categories {
+                background-image: url("image/image6.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card_categories1 {
+                background-image: url("image/image6.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card_categories2 {
+                background-image: url("image/image2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card_categories3 {
+                background-image: url("image/image4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card_categories4 {
+                background-image: url("image/image3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            body,html{
+                font-family: 'Roboto';
+            }
+            
+        </style>
+    </header>
+
+    <body style="background-color: #f6f6f6">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-danger" href="#">
+                <b>Brand</b>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pickup</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input
+                        class="form-control mr-sm-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn my-2 my-sm-0 btn-link" type="submit"><img src="icon/search-icon.png" alt=""></button>
+                </form>
+                <button class="btn btn-link" type="button">
+                    <img src="icon/cart.png" alt="">
+                </button>
+                <button type="button" class="btn btn-light">Sign in</button>
+                <button type="button" class="btn btn-danger">Sign up</button>
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="top-wrapper">
+            <div
+                class="container-fluid d-flex justify-content-between align-items-center pt-4 pb-4 mt-5">
+                <div class="hero-text">
+                    <h1>Delivery or Pickup Food</h1>
+                    <h5 style="padding-left: 2% ">From the best restaurants in Seattle</h5>
+                    <div class="searching-box d-flex mt-5" \="\">
+                        <div class="form-group has-search " style="margin-bottom: 0px">
+                            <i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
+                            <input
+                                style="border:none"
+                                type="text"
+                                class="form-control shadow-sm"
+                                placeholder=" restaurants, foods, Location">
+                        </div>
+                        <button class="btn search shadow-lg" type="button">Search</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="image/image1.png">
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Cuisine-->
+        <div class="container-fluid p-0 m-0">
+            <h1 class="cuisine">Cuisine</h1>
+            <br>
+            <div class="container category-grid">
+                <div class="grid-c-item grid-c-item-1 shadow-sm  bg-white rounded">
+                    <div id="c1" class="inner-c-item">
+                        <img src="icon/img4.png">
+                        <h5 class="mb-0">Fast Food</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-2 shadow-sm  bg-white rounded">
+                    <div id="c2" class="inner-c-item">
+                        <img src="icon/rest2-01.png">
+                        <h5 class="mb-0">Pizza</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-3 shadow-sm  bg-white rounded">
+                    <div id="c3" class="inner-c-item">
+                        <img src="icon/img1.png">
+                        <h5 class="mb-0">Dessert</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-4 shadow-sm  bg-white rounded">
+                    <div id="c4" class="inner-c-item">
+                        <img src="icon/img3.png">
+                        <h5 class="mb-0">breakfast</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-5 shadow-sm  bg-white rounded">
+                    <div id="c5" class="inner-c-item">
+                        <img src="icon/img2.png">
+                        <h5 class="mb-0">Healty</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-6 shadow-sm  bg-white rounded">
+                    <div id="c6" class="inner-c-item">
+                        <img src="icon/img5.png">
+                        <h5 class="mb-0">Chicken</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-7 shadow-sm  bg-white rounded">
+                    <div id="c7" class="inner-c-item">
+                        <img src="icon/img6.png">
+                        <h5 class="mb-0">Chinese</h5>
+                    </div>
+                </div>
+                <div class="grid-c-item grid-c-item-8 shadow-sm  bg-white rounded">
+                    <div id="c8" class="inner-c-item">
+                        <img src="icon/img7.png">
+                        <h5 class="mb-0">Japanese</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Categories -->
+        <div class="container">
+            <div class="row">
+                <div style="font-size: 30" class="col text-center">
+                    Popular Categories
+                </div>
+                <div class=".col-md-4 .ml-auto text-right">
+                    <button type="button" class="btn btn-light" style="color: red">View all</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card -->
+
+        <div class="container" style="padding-top: 5%;">
+            <div class="card-deck">
+                    <div class="card card_categories1" style="width: 18rem;">
+                        <div style="position: absolute;
+                                    bottom: 0px;
+                                    left: 0;
+                                    right: 0;
+                                    padding: 0em 2em;">
+                           <h4 style="color: #ffff">Japanese </h4>
+                           <p style="text-align: left;">Foods</p>
+                        </div>
+                    </div>
+                <div class="card card_categories2" style="width: 18rem;">
+                     <div style="position: absolute;
+                                    bottom: 0px;
+                                    left: 0;
+                                    right: 0;
+                                    padding: 0em 2em;">
+                           <h4 style="color: #ffff">Italian </h4>
+                           <p style="text-align: left;">Foods</p>
+                        </div>
+                </div>
+                <div class="card card_categories3" style="width: 18rem;">
+                     <div style="position: absolute;
+                                    bottom: 0px;
+                                    left: 0;
+                                    right: 0;
+                                    padding: 0em 2em;">
+                           <h4 style="color: #ffff">Healthy </h4>
+                           <p style="text-align: left;">Foods</p>
+                        </div>
+                </div>
+                <div class="card card_categories4" style="width: 18rem;">
+                     <div style="position: absolute;
+                                    bottom: 0px;
+                                    left: 0;
+                                    right: 0;
+                                    padding: 0em 2em;">
+                           <h4 style="color: #ffff">Grilled </h4>
+                           <p style="text-align: left;">Foods</p>
+                        </div>
+                </div>
+                <div class="card card_categories" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">&nbsp</h5>
+                        <p class="card-text">&nbsp</p>
+                        <p class="card-text">&nbsp</p>
+                        <h4 style="color: #ffff">Chinese </h4>
+                        <p style="text-align: left;">Foods</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Categories -->
+        <div class="container" style="padding-top: 1%;">
+            <div class="row">
+                <div class="col">
+                    Top rated Restaurant
+                </div>
+                <div class=".col-md-4 .ml-auto text-right">
+                    <button type="button" class="btn btn-light" style="color: red">View all</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="container">
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image8.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body ">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Steak restaurant</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.5</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">The Shambles</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>15th Ave NE Seattle, WA 98115</small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $30 and under</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image12.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Italian cuisine</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.8</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">Cafe Juanita</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>9702 NE 120th PI Kirkland, WA 98034</small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $50 and under</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image9.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Japanese</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.5</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">Wataru</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>7051, 2400 NE 65th St Seattle, WA 98115</small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $50 and under</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image10.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Italian cuisine</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.6</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">Como</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>1270 Carillon Pt Kirkland, WA 98033</small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $31 to %50</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image11.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Steak restaurant</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.5</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">Flincreek Cattle Co.</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>8421 Greenwood Ave N Seattle, WA 98103</small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $30 and under</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" style="width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-sm-5">
+                                <img class="card-img" src="image/image7.jpg" alt="Suresh Dasari Card">
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-body">
+                                    <div class="card-theme">
+                                        <ul class="restaurant d-flex flex-row align-items-center justify-content-end">
+                                            <li class="mr-auto">
+                                                <small>Italian restaurant and bar</small>
+                                            </li>
+                                            <li>
+                                                <small style="color: black">
+                                                    <span><img src="icon/star.png"></span>4.8</small>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="card-title">Cantinetta - Wallingford</h5>
+                                    <small class="card-text">
+                                        <span><img src="icon/map-pin.png"></span>3650 Wallingford Ave Seattle, WA 98103
+                                    </small>
+                                    <br>
+                                    <small>
+                                        <span><img src="icon/dollar-sign.png"></span>Average price $30 and under</small><br>
+                                        <a href="#" class="btn-danger delivery">Free delivery over $15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 mb-5">
+                <div
+                    class="header-3"
+                    style="width:100%; background:#989696; height:300px;border-radius:15px;"></div>
+        </div>
+        <footer class="page-footer bg-light">
+        <div class="bg-light">
+            <div style="margin: 3px auto;
+            padding :5px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;" class="container">
+                <div class="row py-4 d-flex align-items-left">
+                    <a class="navbar-brand text-danger" href="#">
+                        <b style="font-size: 25">Brand</b>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin: 3px auto;
+            padding :5px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;" class="container text-center text-md-left mt-5">
+                <div class="row">
+                    <div class="col-md-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Company</h6>
+                        <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+                        <ul class="list-unstyled">
+                            <li><small class="text-muted">About Us</small></li>
+                            <li><small class="text-muted">Blog</small></li>
+                            <li><small class="text-muted">Careers</small></li>
+                            <li><small class="text-muted">Report</small></li>
+                            <li><small class="text-muted">Contact me</small></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">Discover</h6>
+                        <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                        <ul class="list-unstyled">
+                            <li><small class="text-muted">Top 100 Restaurants</small></li>
+                            <li><small class="text-muted">Cuisines Near Me</small></li>
+                            <li><small class="text-muted">Restaurants Near Me</small></li>
+                            <li><small class="text-muted">Delivery Near Me</small></li>
+                            <li><small class="text-muted">Pick Up Near Me</small></li>
+                            <li><small class="text-muted">Cuisines</small></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">For Restaurants</h6>
+                        <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                        <ul class="list-unstyled">
+                            <li><small class="text-muted">Business Application</small></li>
+                            <li><small class="text-muted">Add Restaurants</small></li>
+                            <li><small class="text-muted">Product for business</small></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+                        <h6 class="text-uppercase font-weight-bold">For You</h6>
+                        <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                        <ul class="list-unstyled">
+                            <li><small class="text-muted">Privacy</small></li>
+                            <li><small class="text-muted">Regulation</small></li>
+                            <li><small class="text-muted">Police</small></li>
+                            <li><small class="text-muted">Site Map</small></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase font-weight-bold">Social Media</h6>
+                        <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                        <div class="sosmed">
+                            <p style="color: mediumblue;"> <i class="fab fa-facebook-square"></i></p>
+                            <p href="#" style="color: lightblue;"> <i class="fab fa-twitter-square ml-3"></i></p>
+                            <p style="color: deeppink;"> <i class="fab fa-instagram-square ml-3"></i></p>
+                        </div>
+                        <p><img src="icon/apl.jpeg" class="img-fluid"></p>
+                        <p><img src="icon/ggl.jpeg" class="img-fluid"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
